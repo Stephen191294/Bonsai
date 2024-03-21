@@ -4,6 +4,17 @@ body{
   margin-bottom: 90%;
 }
 
+.blue-triangle{
+  position: absolute;
+  background-color: #e6fff5 ;
+  top: -50%;
+  right: -23%;
+  left: 20%;
+  width: 90%;
+  height: 120%;
+  z-index: -1;
+  transform: rotate(-23deg);
+}
 
 .button-container{
   display: flex;
@@ -33,7 +44,7 @@ body{
 
 .first-section{
   border: 1px solid black;
-  margin-top: 110px;
+  height: 2000px;
 }
 
 .header-container{
