@@ -1,5 +1,189 @@
 body{
   margin: 0;
   padding: 0;
+  margin-bottom: 90%;
 }
 
+
+.button-container{
+  display: flex;
+  
+}
+
+.dropdown-icon{
+  margin-left: 5px;
+}
+
+
+.dropdown-menu-1{
+  font-size: 17px;
+  font-weight: 400;
+  color: #4c4d5f;
+  /*line-height: 22px;*/
+  font-family: 'Proximanova opt', sans-serif;
+}
+
+.dropdown-menu-2{
+  font-size: 17px;
+  font-weight: 400;
+  color: #4c4d5f;
+  margin-left: 40px;
+  font-family: 'Proximanova opt', sans-serif;
+}
+
+.first-section{
+  border: 1px solid black;
+  margin-top: 110px;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border: 1px solid black;
+  padding-top: 30px;
+  padding-left: 20px ;
+  padding-right: 20px ;
+
+}
+
+.header-link{
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  color: #4c4d5f;
+  margin-left: 40px;
+  font-family: 'Proximanova opt', sans-serif;
+}
+
+
+
+
+.header-button-1{
+  display: block;
+  color:#00b289;
+  text-decoration: none;
+  border: 1px solid #00b289;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 35px;
+  width: 120px;
+  font-weight: 700;
+  margin-right: 15px;
+  padding-top: 15px;
+  font-family: 'Proximanova opt', sans-serif;
+}
+
+.header-button-1:hover{
+  display: block;
+  color:#fff;
+  text-decoration: none;
+  border: 1px solid #00b289;
+  background-color: #00b289;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 35px;
+  width: 120px;
+  font-weight: 700;
+  margin-right: 15px;
+  padding-top: 15px;
+  font-family: 'Proximanova opt', sans-serif;
+}
+
+
+.header-button-2{
+  display: block;
+ color: #fff;
+ background-color: #00b289;
+ border: 1px solid #00b289;
+ border-radius: 4px;
+ text-decoration: none;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: 700;
+ height: 35px;
+ padding-top: 15px;
+ width: 150px;
+ font-family: 'Proximanova opt', sans-serif;
+}
+
+.header-button-2:hover{
+  display: block;
+ color: #fff;
+ background-color: #009975;
+ border: 1px solid #009975;
+ border-radius: 4px;
+ text-decoration: none;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: 700;
+ height: 35px;
+ padding-top: 15px;
+ width: 150px;
+ font-family: 'Proximanova opt', sans-serif;
+}
+
+
+.logo-container{
+  cursor: pointer;
+}
+
+
+.nav-items{
+  display: flex;
+}
+
+.sticky-header{
+  position: fixed;
+  top:0;
+  background-color: #fff;
+  
+  width: 100%;
+  z-index: 100;
+}
+
+
+
+@media  (max-width: 800px) {
+  
+  .dropdown-icon{
+    display: none;
+  }
+  
+  .dropdown-menu-1{
+    display: none;
+  }
+  
+  .dropdown-menu-2{
+    display: none;
+  }
+  
+  .header-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    border: 1px solid black;
+  }
+  
+  .header-link{
+   display: none;
+  }
+  
+  .header-button-1{
+ display: none;
+  }
+  
+  .header-button-2{
+    display: none;
+ 
+  }
+  
+  .nav-items{
+    display: none;
+  }
+  
+
+}
