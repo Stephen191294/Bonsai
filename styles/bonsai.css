@@ -29,6 +29,10 @@ h3{
   
 }
 
+.cheveron-text-container{
+  display: flex;
+  align-items: center;
+}
 
 .col-md-6{
   display: flex;
@@ -40,7 +44,6 @@ h3{
   display: flex;
   align-items: center;
   
-
 }
 
 .dropdown-header{
@@ -67,7 +70,6 @@ h3{
   cursor: pointer;
 }
 
-
 .dropdown-menu-1{
   font-size: 17px;
   font-weight: 400;
@@ -77,11 +79,10 @@ h3{
   font-family: 'Proximanova opt', sans-serif;
 }
 
-.dropdown-content:hover  .horizontal-line{
+/*.dropdown-content:hover  .horizontal-line{
  
-  border: transparent;
-}
-
+  border:#e6fff5;
+}*/
 
 .dropdown {
   position: relative;
@@ -106,6 +107,13 @@ h3{
   margin-right: 700px;
 }
 
+.dropdown-link-1:hover + .dropdown-submenu .submenu,
+.dropdown-submenu:hover .submenu {
+  display: block; /* Show the submenu when either the link or submenu itself is hovered */
+}
+
+
+
 
 .dropdown-menu-2{
   font-size: 17px;
@@ -115,6 +123,31 @@ h3{
   margin-left: 40px;
   font-family: 'Proximanova opt', sans-serif;
 }
+
+.dropdown-content .fa-solid {
+  margin-left: 20px;
+  color: #4c4d5f;
+  display: none;
+}
+
+.dropdown-content:hover .fa-solid{
+  display: inline-block;
+}
+
+/*experimental code*/
+.dropdown-2 .dropdown-content-2 {
+  display: none; /* Hide dropdown content by default */
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-2:hover .dropdown-content-2 {
+  display: block; /* Show the dropdown content when dropdown menu is hovered */
+}
+/*experimental code end*/
+
 
 .first-section{
  /* border: 1px solid black;*/
@@ -130,9 +163,6 @@ h3{
 
 }
 
-.fa-solid {
-  margin-left: 5px;
-}
 
 
 .header-container{
@@ -154,7 +184,6 @@ h3{
   margin-left: 40px;
   font-family: 'Proximanova opt', sans-serif;
 }
-
 
 
 .header-button-1{
@@ -264,9 +293,9 @@ h3{
   width: 700px;
   padding: 22px;
   top: 0;
-  left: 100%;
+  left: 95%;
   z-index: 1;
-  box-shadow: 7px 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 9px 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .submenu-logo{
@@ -274,12 +303,17 @@ h3{
 }
 
 .submenu-item-container{
-  background-color: beige;
-margin-right: 5px;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.submenu-item-container:hover{
+  background-color: #f2f2f2;
 }
 
 .submenu-logo-container{
   display: flex;
+  
   
 }
 .dropdown-submenu:hover .submenu {
